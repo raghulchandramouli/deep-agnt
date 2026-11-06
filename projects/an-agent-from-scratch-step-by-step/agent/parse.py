@@ -9,3 +9,14 @@ def text_blocks(response):
             results.append(block['text'])
 
     return results
+
+
+def text_of(response):
+
+    blocks = text_blocks(response)
+
+    results = "\n".join(blocks)
+
+    results = results.strip()
+
+    return results
